@@ -1,10 +1,12 @@
- @import 'foundation-icons';
+@import 'bootstrap';
 
- /*$btnPrimaryBackground: orange;*/
+@import 'bootstrap-responsive';
+
+/*$btnPrimaryBackground: orange;*/
 /*$navbarBackgroundHighlight: gray;*/
 /*$navbarLinkColor: white;*/
 $navbarBackground: white;
 
-@import 'bootstrap';
-
-@import 'bootstrap-responsive';
+body ul li{
+	list-style: none;
+}

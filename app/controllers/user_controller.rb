@@ -7,7 +7,7 @@ class UserController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      redirect_to :back, :notice => "Signed up!"
+      redirect_to root_path, :notice => "Signed up!"
     else
       render "new"
     end
@@ -31,9 +31,9 @@ class UserController < ApplicationController
     end
   end
 
-  def show
-    if current_user
-      @user = User.find(params[:id])
-    end
-  end
+  # def show
+  #   if current_user
+  #     @user = User.find(params[:id])
+  #   end
+  # end
 end

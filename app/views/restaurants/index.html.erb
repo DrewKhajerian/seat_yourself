@@ -1,0 +1,10 @@
+<% @restaurants.each do |restaurant| %>	
+
+		<!-- <img></img> -->
+		<p><%= link_to restaurant[:name], restaurant_path(restaurant) %></p>
+		<ul>
+			<li><%= restaurant[:description] %></li>
+			<li><%= restaurant[:address] %></li>
+		</ul>
+
+<% end %>

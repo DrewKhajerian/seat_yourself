@@ -1,5 +1,8 @@
 class Reservation < ActiveRecord::Base
-  attr_accessible :date, :time, :party, :restaurant_id, :user_id
+  attr_accessible :date, :time, :party_size, :restaurant_id, :user_id
+
+  has_one :user
+  has_one :restaurant
 
   after_create :add_user_points
   after_destroy :remove_user_points

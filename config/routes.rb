@@ -5,6 +5,10 @@ SeatYourself::Application.routes.draw do
 
   resources :user
   resources :sessions, :only => [:new, :create, :destroy]
+  resources :restaurants
+  
+  # nest reservations in restaurants??
+  # resources :reservations
 
   root :to => 'restaurants#index'
 end

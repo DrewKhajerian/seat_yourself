@@ -9,7 +9,7 @@
 				<ul class="nav pull-right">
 			  	<% if current_user %>
 			        <li><%= link_to current_user.name, user_path(current_user) %></li> 
-			        <li><%= link_to "Edit", edit_user_path(current_user) %></li>
+			        <li><%= link_to "Edit User", edit_user_path(current_user) %></li>
 			        <li><%= link_to "Log out", session_path("current"), :method => :delete %></li>
 			     <% else %>
 			        <li><%= link_to "Log in", new_session_path %></li>

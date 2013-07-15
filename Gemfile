@@ -5,6 +5,7 @@ gem 'rails', '3.2.13'
 gem 'sqlite3'
 gem "geocoder"
 gem 'jquery-rails'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -17,12 +18,13 @@ end
 group :development do
   gem 'letter_opener'
   gem "better_errors"
+  gem "binding_of_caller"
 end
 
 
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
