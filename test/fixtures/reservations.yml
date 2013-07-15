@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  party: 1
+  date: 2013-07-12
+  time: 2013-07-12 16:18:18
+  user_id: 
+  retaurant_id: 
+
+two:
+  party: 1
+  date: 2013-07-12
+  time: 2013-07-12 16:18:18
+  user_id: 
+  retaurant_id: 

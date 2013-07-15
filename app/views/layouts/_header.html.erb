@@ -1,0 +1,22 @@
+<header>
+	<div class="navbar">
+	  <div class="navbar-inner">
+	  	<div class="container">
+				<ul class="nav">
+					<%= link_to "SeatYourself", root_path, class: "brand" %>
+					<!-- <li><%#= link_to "Make Reservation", new_reservation_path %></li> -->
+				</ul>
+				<ul class="nav pull-right">
+			  	<% if current_user %>
+			        <li><%= link_to current_user.name, user_path(current_user) %></li> 
+			        <li><%= link_to "Edit", edit_user_path(current_user) %></li>
+			        <li><%= link_to "Log out", session_path("current"), :method => :delete %></li>
+			     <% else %>
+			        <li><%= link_to "Log in", new_session_path %></li>
+			        <li><%= link_to "Sign up", new_user_path %></li>
+			     <% end %>
+			  </ul>
+			</div>
+		</div>
+	</div>
+</header>
