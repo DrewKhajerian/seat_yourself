@@ -1,15 +1,16 @@
 <h1><%= @restaurant.name %></h1>
 
 <ul>
-	<li><%= restaurant[:description] %></li>
-	<li><%= restaurant[:address] %></li>
-	<li><%= restaurant[:phone_number] %></li>
-	<li><%= restaurant[:price_range] %></li>
+	<li><%= @restaurant[:description] %></li>
+	<li><%= @restaurant[:address] %></li>
+	<li><%= @restaurant[:phone_number] %></li>
+	<li><%= @restaurant[:price_range] %></li>
 	<!-- <li>menu</li> -->
 </ul>
 
 <div class="hours">
-	<ul>
-		<li>Mon:</li>
-	</ul>
+	<p>Open Every day from 11am-8pm</p>
 </div>
+
+<button><%= link_to "Make Reservation", new_restaurant_reservation_path(@restaurant) %></button>
+<button><%= link_to "View Reservations", restaurant_reservation_path(@restaurant) %></button>

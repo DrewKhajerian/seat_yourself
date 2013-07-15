@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
   validates_presence_of :password, :on => :create 
   validates_presence_of :email
 
-  has_many :reservation
+  has_many :reservations
 end

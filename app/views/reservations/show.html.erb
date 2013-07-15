@@ -1,0 +1,11 @@
+<h1><%= @restaurant[:name] %></h1>
+
+<h4>Reservations</h4>
+
+<% @restaurant.reservations.each do |res| %>
+	<p>Date: <%= res.date %></p>
+	<p>Time: <%= res.time %></p> 
+	<p>Party size: <%= res.party %></p>
+	<p>Reserved by: <%= res.user.name %></p>
+	<br>
+<% end %>   
