@@ -10,13 +10,13 @@
 #   Category.create! name: cat
 # end
 
-# Restaurant.create! name: "Il Fornello", 
-#   address: "150 Yonge St.",
-#   description: "Bad Italian food",
-#   phone_number: "416-555-5555",
-#   price_range: "$20-30",
-#   category_id: Category.where(name: 'Italian').first.id,
-#   user_id: User.where(is_owner: true).where(name: 'Joe').first.id
+Restaurant.create! name: "Keg", 
+  address: "150 East Beaver Creak",
+  description: "Bomb Ass",
+  phone_number: "416-555-5555",
+  price_range: "$25-50",
+  category_id: Category.where(name: 'Steakhouse').first.id
+  # user_id: User.where(is_owner: true).where(name: 'Joe').first.id
 
 # User.create! name: "Trevor",
 # 	email: "trevor@email.com",

@@ -2,7 +2,7 @@ class RestaurantsController < ApplicationController
 
 	def index
 		@restaurants = Restaurant.all
-
+    @categories = Category.all
 		respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @restaurant }

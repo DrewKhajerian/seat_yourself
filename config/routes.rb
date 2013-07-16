@@ -1,9 +1,8 @@
 SeatYourself::Application.routes.draw do
 
-
   # get "location/show"
   # get "location/index"
-
+  resources :categories, :only => [:index, :show]
   resources :user
   resources :sessions, :only => [:new, :create, :destroy]
   resources :restaurants do
