@@ -8,9 +8,19 @@
 	</head>
 	<body>
 
-		<%= render "layouts/header" %>		
+		<%= render "layouts/header" %>	
 
-		<%= yield %>
+		<div class="body-container">
+			<% if flash[:notice] %>
+		      <p id="notice"><%= flash[:notice] %></p>
+	    <% end %>
+	    <% if flash[:alert] %>
+		      <p id="alert"><%= flash[:alert] %></p>
+	    <% end %>
+
+			<%= yield %>
+			
+		</div>
 
 	</body>
 </html>

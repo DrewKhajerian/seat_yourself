@@ -6,6 +6,7 @@ gem 'sqlite3'
 gem "geocoder"
 gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'acts-as-taggable-on'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -20,6 +21,8 @@ group :development do
   gem "better_errors"
   gem "binding_of_caller"
 end
+
+
 
 
 

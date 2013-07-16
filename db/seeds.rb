@@ -10,17 +10,19 @@
 #   Category.create! name: cat
 # end
 
-# Restaurant.create! name: "McDonalds", 
-#   address: "433 Front Street",
-#   description: "Burgers and shit",
+# Restaurant.create! name: "Il Fornello", 
+#   address: "150 Yonge St.",
+#   description: "Bad Italian food",
 #   phone_number: "416-555-5555",
-#   price_range: "$5-15"
-#   # category_id: Category.where(name: 'Fastfood').first.id,
-#   # menu_id: Menu.where(name:'').first.id
+#   price_range: "$20-30",
+#   category_id: Category.where(name: 'Italian').first.id,
+#   user_id: User.where(is_owner: true).where(name: 'Joe').first.id
 
-# User.create! name: "Ara",
-# 	email: "ara@email.com",
+# User.create! name: "Trevor",
+# 	email: "trevor@email.com",
 # 	password: "foobar",
-# 	password_confirmation: "foobar"
+# 	password_confirmation: "foobar",
+# 	is_owner: true
+
 
 

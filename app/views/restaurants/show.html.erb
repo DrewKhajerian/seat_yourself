@@ -13,4 +13,7 @@
 </div>
 
 <button><%= link_to "Make Reservation", new_restaurant_reservation_path(@restaurant) %></button>
-<button><%= link_to "View Reservations", restaurant_reservation_path(@restaurant) %></button>
+
+<% if current_user.is_owner == true && current_user.id == @restaurant.user_id %>
+	<button><%= link_to "View Reservations", restaurant_reservation_path(@restaurant) %></button>
+<% end %>

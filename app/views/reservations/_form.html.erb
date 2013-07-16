@@ -1,5 +1,5 @@
 <% if current_user %>
-
+  
   <h4>New Reservation</h4>
 
   <%= form_for([@restaurant, @reservation]) do |f| %>
@@ -19,11 +19,11 @@
     </div>
     <div class="field">
       <%= f.label :time %><br />
-      <%= f.time_select :time%>
+      <%= f.select :time, @TIMES %>
     </div>
     <div class="field">
       <%= f.label :party, "Party Size" %><br />
-      <%= f.text_field :party %>
+      <%= f.select :party, @SIZE %>
     </div>
     <div class="actions">
       <%= f.submit %>

@@ -6,6 +6,7 @@ class UserController < ApplicationController
 
   def create
     @user = User.new(params[:user])
+    @user.points = 0
     if @user.save
       redirect_to root_path, :notice => "Signed up!"
     else
@@ -31,9 +32,9 @@ class UserController < ApplicationController
     end
   end
 
-  # def show
-  #   if current_user
-  #     @user = User.find(params[:id])
-  #   end
-  # end
+  def show
+    if current_user
+      @user = User.find(params[:id])
+    end
+  end
 end
